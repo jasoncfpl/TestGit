@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.testgit.example.activity.SpareArrayActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         var gotoTestPageBtn = findViewById<Button>(R.id.btn_goto_page)
         gotoTestPageBtn.setOnClickListener {
             gotoTestPage()
+        }
+
+        var gotoSpareArrayBtn = findViewById<Button>(R.id.btn_goto_spare_array)
+        gotoSpareArrayBtn.setOnClickListener {
+            gotoSpareArrayPage()
         }
 
         learnKotlinLoop()
@@ -50,5 +56,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(MainActivity@this , TestActivity ::class.java))
     }
 
+    private fun gotoSpareArrayPage () {
+        startActivity(Intent(MainActivity@this , SpareArrayActivity ::class.java))
+    }
 
 }
