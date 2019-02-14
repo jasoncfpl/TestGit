@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CommonActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:configChanges">keyboardHidden|orientation|screenSize</item>
+        <item name="android:launchMode">singleTop</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
 </resources>
